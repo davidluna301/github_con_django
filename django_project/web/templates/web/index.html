@@ -1,0 +1,70 @@
+{% extends "web/base.html" %}
+{% load static %}
+
+{% block title %}Portafolios — Equipo de Desarrollo{% endblock %}
+
+{% block extra_css %}
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: #0f0f13;
+    color: #e2e2e2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+  }
+  h1 { font-size: 2rem; font-weight: 900; margin-bottom: .4rem; text-align: center; }
+  .subtitle { color: #888; margin-bottom: 2.5rem; text-align: center; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 900px;
+  }
+  .card {
+    background: #1a1a23;
+    border-radius: 14px;
+    padding: 2rem 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid transparent;
+    transition: border-color .25s, transform .25s;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  .card:hover { transform: translateY(-4px); }
+  .card-icon {
+    width: 48px; height: 48px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem; color: #fff; margin-bottom: .5rem;
+  }
+  .card-name { font-size: 1.15rem; font-weight: 800; }
+  .card-rol  { font-size: .85rem; color: #aaa; }
+  .card-arrow { margin-top: auto; font-size: .8rem; color: #666; }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1><i class="fa fa-code"></i> Portafolios del Equipo</h1>
+<p class="subtitle">Selecciona un portafolio para verlo</p>
+
+<div class="grid">
+  {# Django itera sobre la lista 'portfolios' enviada desde views.py #}
+  {% for p in portfolios %}
+  <a href="{% url p.url %}" class="card" style="border-color: {{ p.color }}20;">
+    <div class="card-icon" style="background: {{ p.color }};">
+      <i class="fa fa-user"></i>
+    </div>
+    <span class="card-name">{{ p.nombre }}</span>
+    <span class="card-rol">{{ p.rol }}</span>
+    <span class="card-arrow">Ver portafolio →</span>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}
