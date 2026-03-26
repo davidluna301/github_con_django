@@ -1,0 +1,278 @@
+{% extends "web/base.html" %}
+{% load static %}
+
+{% block title %}Juan Sebastián Bolívar – Hoja de Vida | Ingeniero de Software{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'web/css/portfolio-sebastian.css' %}"/>
+{% endblock %}
+
+{% block content %}
+
+<!-- ===== NAVBAR ===== -->
+<nav class="port-navbar">
+  <div class="port-navbar-inner">
+    <a href="#perfil" class="port-logo">
+      <span class="logo-text">Juan<span>Sebastián</span></span>
+    </a>
+    <div class="port-nav-links">
+      <a href="#perfil"      class="port-nav-link"><i class="fa fa-user"></i> Perfil</a>
+      <a href="#servicios"   class="port-nav-link"><i class="fa fa-briefcase"></i> Servicios</a>
+      <a href="#tecnologias" class="port-nav-link"><i class="fa fa-code"></i> Tecnologías</a>
+      <a href="#contacto"    class="port-nav-link"><i class="fa fa-envelope"></i> Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO PERFIL ===== -->
+<section class="port-hero" id="perfil">
+  <div class="port-hero-bg"></div>
+  <div class="port-hero-inner">
+    <div class="port-avatar-wrap">
+      <div class="port-avatar">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="60" cy="60" r="60" fill="#004d40"/>
+          <circle cx="60" cy="45" r="21" fill="#00695c"/>
+          <ellipse cx="60" cy="102" rx="33" ry="27" fill="#00695c"/>
+          <circle cx="60" cy="45" r="17" fill="#FFCCBC"/>
+          <ellipse cx="60" cy="43" rx="10" ry="11" fill="#FFAB91"/>
+          <path d="M42 38 Q43 26 60 25 Q77 26 78 38 Q75 30 60 29 Q45 30 42 38Z" fill="#212121"/>
+          <ellipse cx="60" cy="56" rx="11" ry="5" fill="#FFAB91" opacity="0.6"/>
+          <ellipse cx="54" cy="43" rx="3" ry="3.2" fill="#1a1a1a"/>
+          <ellipse cx="66" cy="43" rx="3" ry="3.2" fill="#1a1a1a"/>
+          <circle cx="55.2" cy="41.8" r="1" fill="#fff"/>
+          <circle cx="67.2" cy="41.8" r="1" fill="#fff"/>
+          <path d="M54 51 Q60 56 66 51" stroke="#bf360c" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <rect x="49" y="40" width="10" height="7" rx="3" fill="none" stroke="#004d40" stroke-width="1.8"/>
+          <rect x="61" y="40" width="10" height="7" rx="3" fill="none" stroke="#004d40" stroke-width="1.8"/>
+          <line x1="59" y1="43" x2="61" y2="43" stroke="#004d40" stroke-width="1.5"/>
+          <path d="M47 95 L60 82 L73 95" fill="#00897b" stroke="#00695c" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="port-online-badge"><span class="dot"></span> Disponible</div>
+    </div>
+    <div class="port-hero-info">
+      <span class="port-hero-tag">👨‍💻 Ingeniero de Software</span>
+      <h1 class="port-hero-name">Juan Sebastián Bolívar</h1>
+      <p class="port-hero-role">Software Engineer · Backend & Systems Specialist · UCC</p>
+      <p class="port-hero-desc">Ingeniero de Software egresado de la Universidad Cooperativa de Colombia (UCC), con sólida formación en el diseño, desarrollo y mantenimiento de sistemas de software escalables. Apasionado por las buenas prácticas de ingeniería, la arquitectura de sistemas y la construcción de soluciones tecnológicas robustas que generen impacto real en los usuarios y en el negocio.</p>
+      <div class="port-hero-actions">
+        <a href="https://github.com/SebastianBolivar01" target="_blank" class="port-btn-primary">
+          <i class="fa-brands fa-github"></i> Ver GitHub
+        </a>
+        <a href="#contacto" class="port-btn-secondary">
+          <i class="fa fa-envelope"></i> Contactar
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="port-stats">
+  <div class="port-stats-inner">
+    <div class="port-stat"><span class="stat-num">3+</span><span class="stat-label">Años de experiencia</span></div>
+    <div class="port-stat"><span class="stat-num">12+</span><span class="stat-label">Proyectos completados</span></div>
+    <div class="port-stat"><span class="stat-num">6</span><span class="stat-label">Tecnologías principales</span></div>
+    <div class="port-stat"><span class="stat-num">UCC</span><span class="stat-label">Formación universitaria</span></div>
+  </div>
+</section>
+
+<!-- ===== PERFIL PROFESIONAL ===== -->
+<section class="port-section" id="sobre-mi">
+  <div class="port-section-inner">
+    <h2 class="port-section-title"><i class="fa fa-id-badge"></i> Perfil Profesional</h2>
+    <div class="port-profile-card">
+      <div class="port-profile-icon">
+        <i class="fa fa-user-tie"></i>
+      </div>
+      <div class="port-profile-text">
+        <p>Ingeniero de Software con formación integral en la <strong>Universidad Cooperativa de Colombia (UCC)</strong>, especializado en el desarrollo de sistemas backend, APIs REST y arquitecturas orientadas a la calidad del software. Cuenta con experiencia participando en proyectos reales de desarrollo web y aplicaciones empresariales, aplicando metodologías ágiles, principios SOLID y buenas prácticas de ingeniería.</p>
+        <p>Su enfoque está orientado a escribir código limpio, mantenible y eficiente, con especial interés en la seguridad de aplicaciones, gestión de bases de datos y el despliegue de soluciones en entornos de nube. Comprometido con el aprendizaje continuo y la mejora constante en cada línea de código que escribe.</p>
+        <div class="port-profile-badges">
+          <span class="profile-badge"><i class="fa fa-graduation-cap"></i> Ing. Software – UCC</span>
+          <span class="profile-badge"><i class="fa fa-code-branch"></i> Clean Code</span>
+          <span class="profile-badge"><i class="fa fa-shield-alt"></i> Seguridad Web</span>
+          <span class="profile-badge"><i class="fa fa-users-cog"></i> Metodologías Ágiles</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICIOS ===== -->
+<section class="port-section port-section-alt" id="servicios">
+  <div class="port-section-inner">
+    <h2 class="port-section-title"><i class="fa fa-briefcase"></i> Servicios Ofrecidos</h2>
+    <div class="port-services-grid">
+
+      <div class="port-service-card">
+        <div class="psc-icon"><i class="fa fa-server"></i></div>
+        <h3>Desarrollo Backend</h3>
+        <p>Diseño e implementación de servicios backend sólidos, escalables y bien estructurados con Node.js y Java Spring Boot.</p>
+      </div>
+
+      <div class="port-service-card">
+        <div class="psc-icon"><i class="fa fa-plug"></i></div>
+        <h3>APIs REST</h3>
+        <p>Creación de APIs RESTful documentadas, seguras y de alto rendimiento, siguiendo estándares modernos de diseño de software.</p>
+      </div>
+
+      <div class="port-service-card">
+        <div class="psc-icon"><i class="fa fa-database"></i></div>
+        <h3>Gestión de Bases de Datos</h3>
+        <p>Modelado, optimización y administración de bases de datos relacionales y NoSQL para aplicaciones de mediana y gran escala.</p>
+      </div>
+
+      <div class="port-service-card">
+        <div class="psc-icon"><i class="fa fa-code"></i></div>
+        <h3>Desarrollo Full Stack</h3>
+        <p>Construcción de aplicaciones web completas integrando frontend moderno con backends robustos y bases de datos eficientes.</p>
+      </div>
+
+      <div class="port-service-card">
+        <div class="psc-icon"><i class="fa fa-shield-alt"></i></div>
+        <h3>Seguridad de Aplicaciones</h3>
+        <p>Implementación de autenticación JWT, autorización por roles, cifrado de datos y buenas prácticas de seguridad en el desarrollo.</p>
+      </div>
+
+      <div class="port-service-card">
+        <div class="psc-icon"><i class="fa fa-vial"></i></div>
+        <h3>Testing & Calidad</h3>
+        <p>Escritura de pruebas unitarias, de integración y revisión de código enfocada en calidad, cobertura y mantenibilidad del software.</p>
+      </div>
+
+      <div class="port-service-card">
+        <div class="psc-icon"><i class="fa fa-cloud-upload-alt"></i></div>
+        <h3>Despliegue en Cloud</h3>
+        <p>Configuración y despliegue de aplicaciones en entornos cloud con Docker, pipelines CI/CD y gestión de infraestructura básica.</p>
+      </div>
+
+      <div class="port-service-card">
+        <div class="psc-icon"><i class="fa fa-sitemap"></i></div>
+        <h3>Arquitectura de Software</h3>
+        <p>Diseño de arquitecturas limpias y escalables aplicando principios SOLID, patrones de diseño y buenas prácticas de ingeniería.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TECNOLOGÍAS ===== -->
+<section class="port-section" id="tecnologias">
+  <div class="port-section-inner">
+    <h2 class="port-section-title"><i class="fa fa-laptop-code"></i> Stack Tecnológico</h2>
+    <div class="port-tech-groups">
+
+      <div class="port-tech-group">
+        <div class="ptg-header"><i class="fa fa-paint-brush"></i> Frontend</div>
+        <div class="ptg-tags">
+          <span class="ptag frontend">HTML5</span>
+          <span class="ptag frontend">CSS3</span>
+          <span class="ptag frontend">JavaScript</span>
+          <span class="ptag frontend">React.js</span>
+          <span class="ptag frontend">Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="port-tech-group">
+        <div class="ptg-header"><i class="fa fa-server"></i> Backend</div>
+        <div class="ptg-tags">
+          <span class="ptag backend">Node.js</span>
+          <span class="ptag backend">Express.js</span>
+          <span class="ptag backend">Java</span>
+          <span class="ptag backend">Spring Boot</span>
+        </div>
+      </div>
+
+      <div class="port-tech-group">
+        <div class="ptg-header"><i class="fa fa-database"></i> Bases de Datos</div>
+        <div class="ptg-tags">
+          <span class="ptag db">MySQL</span>
+          <span class="ptag db">PostgreSQL</span>
+          <span class="ptag db">MongoDB</span>
+        </div>
+      </div>
+
+      <div class="port-tech-group">
+        <div class="ptg-header"><i class="fa fa-cloud-upload-alt"></i> DevOps & Cloud</div>
+        <div class="ptg-tags">
+          <span class="ptag devops">Docker</span>
+          <span class="ptag devops">CI/CD</span>
+          <span class="ptag devops">AWS (básico)</span>
+        </div>
+      </div>
+
+      <div class="port-tech-group">
+        <div class="ptg-header"><i class="fa fa-tools"></i> Herramientas</div>
+        <div class="ptg-tags">
+          <span class="ptag other">Git</span>
+          <span class="ptag other">GitHub</span>
+          <span class="ptag other">Postman</span>
+          <span class="ptag other">VS Code</span>
+        </div>
+      </div>
+
+      <div class="port-tech-group">
+        <div class="ptg-header"><i class="fa fa-network-wired"></i> Arquitectura & Prácticas</div>
+        <div class="ptg-tags">
+          <span class="ptag arch">APIs REST</span>
+          <span class="ptag arch">SOLID</span>
+          <span class="ptag arch">Clean Code</span>
+          <span class="ptag arch">JWT / Auth</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACTO ===== -->
+<section class="port-section port-section-alt" id="contacto">
+  <div class="port-section-inner port-contact-wrap">
+    <h2 class="port-section-title"><i class="fa fa-envelope"></i> Contacto</h2>
+    <div class="port-contact-card">
+      <div class="port-contact-avatar">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="40" fill="#004d40"/>
+          <circle cx="40" cy="30" r="14" fill="#00695c"/>
+          <ellipse cx="40" cy="68" rx="22" ry="18" fill="#00695c"/>
+          <circle cx="40" cy="30" r="11" fill="#FFCCBC"/>
+          <path d="M29 26 Q30 18 40 17 Q50 18 51 26" fill="#212121"/>
+          <ellipse cx="36" cy="29" rx="2" ry="2.2" fill="#1a1a1a"/>
+          <ellipse cx="44" cy="29" rx="2" ry="2.2" fill="#1a1a1a"/>
+          <circle cx="36.8" cy="28.3" r="0.7" fill="#fff"/>
+          <circle cx="44.8" cy="28.3" r="0.7" fill="#fff"/>
+          <path d="M36.5 33.5 Q40 36.5 43.5 33.5" stroke="#bf360c" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <rect x="33" y="27" width="7" height="5" rx="2" fill="none" stroke="#004d40" stroke-width="1.2"/>
+          <rect x="40" y="27" width="7" height="5" rx="2" fill="none" stroke="#004d40" stroke-width="1.2"/>
+          <line x1="39" y1="29.5" x2="40" y2="29.5" stroke="#004d40" stroke-width="1.2"/>
+        </svg>
+      </div>
+      <div class="port-contact-info">
+        <h3>Juan Sebastián Bolívar</h3>
+        <p>Software Engineer · UCC · Backend Specialist</p>
+        <div class="port-contact-links">
+          <a href="https://github.com/SebastianBolivar01" target="_blank" class="pcl-btn github">
+            <i class="fa-brands fa-github"></i> github.com/SebastianBolivar01
+          </a>
+        </div>
+        <p class="port-contact-note">¿Tienes un proyecto de software o necesitas un backend sólido? ¡Con gusto hablamos!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="port-footer">
+  <div class="port-footer-inner">
+    <span class="port-footer-logo">Juan Sebastián Bolívar</span>
+    <p>© 2024 · Hoja de Vida · Juan Sebastián Bolívar · Software Engineer</p>
+  </div>
+</footer>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'web/js/portfolio-sebastian.js' %}"></script>
+{% endblock %}
